@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.4",
+    "fastly-promises": "^0.9.0",
+    "express-cache-controller": "^1.1.0"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/handlebars-setup-example"
+  },
+  "license": "MIT"
+}

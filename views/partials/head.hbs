@@ -1,0 +1,89 @@
+<head>
+  <title>Fastly MOTD</title>
+  <meta name="description" content="A quick and dirty exaple of Fastly's instant purge.">
+  <link id="favicon" rel="icon" href="https://cdn.glitch.com/5c586511-8b2c-4245-99d1-922a4c0ceb06%2Fimage.png?v=1561689649009" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--   <link rel="stylesheet" href="/style.css"> -->
+  <style>
+    html, body{
+  height: 100%;
+  background: black;
+  padding: 0;
+  margin: 0;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.home-pink {
+  height: 33%;
+  min-height: 222px;
+  background: #F05A8D;
+  color: pink;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.background.text {
+  transform-origin: top left;
+  transform: rotateZ(-45deg);
+  top: 0;
+  left: -120vh;
+  width: 444vmax;
+  /* overflow: hidden; */
+  text-overflow: clip;
+  font-family: 'Comic Sans MS';
+  font-weight: bold;
+  font-size: 77px;
+  letter-spacing: 13px;
+  animation: scrollFortyFive 45s linear infinite;
+}
+.background.text.pink {
+  color: #F05A8D;
+  background: #F05A8D;
+  text-shadow: -10px -10px 0 #111111;
+  color: #E11412;
+  opacity: 0.6;
+}
+
+.home-pink p {
+  z-index: 1;
+  text-align: center;
+  font-size: 31px;
+  line-height: 39px;
+  font-weight: bold;
+  max-width: 830px;
+  font-family: 'Comic Sans MS';
+}
+
+@keyframes scrollFortyFive {
+  0% {
+    top: 0vh;
+    left: -120vh;
+  }
+  100% {
+    top: 90vh;
+    left: -210vh;
+  }
+}
+
+  </style>
+</head>
