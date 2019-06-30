@@ -4,6 +4,10 @@
 
 Fastly MoTD is a simple node app that displays a MoTD (message of the day) in the background, and information about who created the MoTD in the foreground. 
 
+## What it does: 
+
+It demonstrates the speed of Fastly's [Instant Purging](https://www.fastly.com/products/instant-purging). When loaded the user is shown a page that is rendered server side and cached on Fastly. Reloading the page multiple times will show the same data each time. However, the page can be updated via the browswer by sending a new message at the "path". When a new message is submitted the page is 301 redirected to the homepage where the old message has already been cleared from the cache. 
+
 ## How to use it: 
 
 Simple, check out this [demo](https://motd.drl.fyi) hosted on Glitch. If we're lucky, you should see a page like this:
