@@ -1,1 +1,0 @@
-# fastly-motd
