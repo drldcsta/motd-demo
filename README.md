@@ -26,4 +26,5 @@ Next, we'll update the message by adding a path to the URL, EG: [motd.drl.fyi/he
 
 It's a simple demo, but the cache invalidation is consistently faster than the 301 redirect from the request to update the message. 
 
-[HERE](https://cdn.glitch.com/5c586511-8b2c-4245-99d1-922a4c0ceb06%2Fthats_fast.gif?v=1561862841187) is a gif of this in action. 
+Here is a gif of this in action:
+![HERE](https://cdn.glitch.com/5c586511-8b2c-4245-99d1-922a4c0ceb06%2Fthats_fast.gif?v=1561862841187)
