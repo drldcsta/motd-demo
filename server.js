@@ -43,7 +43,7 @@ app.get("/:msg?", (request, response) => {
   let data = {
     serverTime: new Date(),
     bodyMsg,
-    ip: (request.headers["x-forwarded-for"]||"").split(",")[0],
+    ip: request.headers["fastly-client-ip"],
     city: request.headers["fastly-geoip-city"],
     country: request.headers["fastly-geoip-countryname"],
     device: request.headers["x-ua-device"],
